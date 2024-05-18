@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #121212;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 sütunlu grid yapısı */
+    gap: 20px;
+    max-width: 1200px;
+    padding: 20px;
+    overflow-y: auto; /* Galeri alanı taşarsa kaydırma çubuğu göster */
+    height: 90vh; /* Yüksekliği belirleyerek kaydırmayı etkinleştir */
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.5s, opacity 0.5s;
+    opacity: 0;
+    transform: scale(0.8);
+}
+
+.gallery img.visible {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}

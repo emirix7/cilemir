@@ -1,0 +1,148 @@
+.custom-button {
+    background-color: black; 
+    border: none; 
+    color: #908f8f; 
+    padding: 10px 20px; 
+    font-size: 16px; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    left:900px;
+    
+    
+}
+
+.custom-button:hover {
+    background-color: hsl(0, 0%, 29%); 
+}
+
+
+            h3{
+                color: #908f8f;
+            font-family: 'Monospace',sans-serif;
+            font-size:30px;
+
+            }
+            .sayac{
+                display: flex;
+                justify-content: center;
+
+                
+                
+
+                
+            }
+            .sayacc{
+                display: flex;
+                justify-content: center;
+                border-radius: 2%;
+                background-color: black;
+                opacity: 0.7;
+                               
+
+                
+            }
+
+            body, html {
+                height: 100%;
+            }
+            #body{
+                background: url(anaresimler/arkaplansb.jpg);
+                height: 100%;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+
+            }
+
+            .container{
+                position:absolute;
+                top:30%;
+                left:50%;
+                margin-left: -270px;
+                margin-top: -70px;                
+                height: 499px;
+                width: 600px;
+                border-radius: 2%;
+                background-color: black;
+                opacity:0.8;
+                
+                
+            }
+            #baslik{
+                position: absolute;
+                top:315px;
+                right:95px;
+                color: #908f8f;
+                font-family: 'Monospace',sans-serif;
+                font-size:30px;
+            }
+            #baslik:hover{
+                color: red; /* Rengin değişmesini engeller */
+                text-decoration: none; /* Alt çizginin görünmesini engeller */
+            }
+            #yazi{
+                position: absolute;
+                top:360px;
+                right:100px;
+                color:gray;
+                font-size:12px;
+                font-family: 'Monospace',sans-serif;
+            }
+            #yazi:hover{
+                color: red; /* Rengin değişmesini engeller */
+                text-decoration: none; /* Alt çizginin görünmesini engeller */
+            }
+            
+
+            img.profil{
+                position:absolute;
+                left:150px;
+                border-radius: 50%;
+                height: 300px;
+                width: 300px;
+                object-fit: cover;
+            }
+
+            /* style.css dosyanızın sonuna ekleyin */
+
+.github-logo {
+    position: absolute;
+    bottom: 50px; /* Öğe sayfanın altında biraz yukarıda olacak */
+    right: 10px; /* Öğe sağ tarafta olacak */
+    font-size: 2rem; /* Logo boyutunu ayarlayın */
+    color: #333; /* Logonun rengini ayarlayın */
+}
+
+.github-logo:hover {
+    color: #000; /* Üzerine gelindiğinde rengini değiştirin */
+}
+
+/* Varsayılan bağlantı stilini kaldırma */
+a {
+    color: inherit; /* Bağlantının rengini çevresindeki metinle aynı yapar */
+    text-decoration: none; /* Alt çizgiyi kaldırır */
+}
+
+/* Bağlantının üzerine gelindiğinde (hover) */
+h3:hover {
+    color: red; /* Rengin değişmesini engeller */
+    text-decoration: none; /* Alt çizginin görünmesini engeller */
+}
+
+
+
+/* Başlangıç durumu */
+.hidden {
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+/* Görünür durumu */
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
